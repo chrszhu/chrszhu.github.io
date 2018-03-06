@@ -1,0 +1,291 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/mixins";
+
+// For the HTML and Body
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.container {
+	font-family: $body-font;
+	display: flex;
+	flex-flow: row wrap;
+	padding-left: 2%;
+	.intro-name {
+		padding-top: 10px;
+		font-family: $title-font;
+		display: block;
+		color: $text-color;
+		font-size: 40px;
+	}
+	.definition {
+		font-family: $title-font;
+		display: block;
+	}
+	.abt-container {
+		.my_img{
+			float: right;
+			height: 50vw;
+			position: relative;
+			top: 50%;
+			transform: translateY(-20%);
+		}
+
+		.bio {
+			//font-family: $title-font;
+			float: left;
+			margin: 0;
+			padding-left: 15px;
+			font-weight: 300;
+		}
+	}
+	.section {
+		padding-left: -2%;
+		position: relative;
+		display: inline-block;
+		font-family: $body-font;
+		font-weight: 300;
+		padding-top: 40px;
+	}
+
+	.work-container {
+
+		.software{
+			float: left;
+			//border-right: 0.5px solid #D8D8D8;
+			height: 40vw;
+			position: relative;
+			display: block;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+			.projects{
+				display: block;
+				margin: 0;
+				.project-container{
+					display: table;
+					content: " ";
+					.projectCell{
+						cursor: pointer;
+						font-weight: bold;
+						font-size: large;
+						padding: 10px;
+						transition: .2s ease-in-out;
+						.projectContent:hover{
+							transform: scale(1.1);
+						}
+					}
+					.description {
+						width: 80%;
+						text-align: center;
+						margin: auto;
+						padding-bottom: 10px;
+						color: #444;
+						margin-top: 10px;
+						font-weight: lighter;
+						font-size: 14px;
+						line-height: 1.8;
+					}
+				}
+			}
+			#code{
+				cursor: pointer;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				transition: .2s ease-in-out;
+
+			}
+			#code:hover{
+				transform: scale(1.1);
+			}
+			.project-info{
+				display: block;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				.project-content{
+					height: 100%;
+					.proj-image{
+						width:100%;
+					}
+				}
+				.project-information{
+					.cancel{
+						cursor:pointer;
+						position:relative;
+						width: 100%;
+						height: 30px;
+					}
+					.project-title{
+						font-weight: bold;
+						position:relative;
+						text-align: center;
+
+					}
+					.proj-description-detail{
+						text-align: left;
+						position:relative;
+					}
+				}
+			}
+		}
+
+		.design {
+			float: right;
+			//border: 1px solid #000000;
+			height: 40vw;
+			position: relative;
+			display: inline-block;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			#design{
+				cursor:pointer;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				transition: .2s ease-in-out;
+			}
+			#design:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.nav-bg{
+		position: fixed;
+		margin: 0;
+		padding: 0;
+		background: white;
+		left: 0px;
+		bottom: 0;
+		opacity: 0.95;
+		z-index: 0;
+		.bottom-nav{
+			z-index: 1;
+			background: white;
+			bottom: 20px;
+			border-bottom: 1px solid #000000;
+
+			.content {
+				display: inline;
+				text-align: center;
+			}
+		}
+	}
+}
+ul {
+	list-style: none;
+}
+li {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 3% 0 3%;
+
+	.cross {
+		display: block;
+		position: absolute;
+		background: white;
+		text-align: center;
+		margin: 0 -0.5% 0 0%;
+		width: 30px;
+	}
+}
+
+.nav_line{
+	display: block;
+	position: relative;
+	width: 100;
+	margin-left: 0;
+}
+#jahan {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+// Control over the span words defining me
+.definition span{
+	position: absolute;
+	font-family: $title-font;
+	font-weight: bold;
+	font-size: 30px;
+	opacity: 0;
+	overflow: hidden;
+	color: $def-color;
+	@include animation(rotateDef, $numWords * $def-delay + s, linear, infinite, 0s);
+}
+
+@for $i from 2 through $numWords {
+	.definition span:nth-child(#{$i}) {
+		@include animation-delay($def-delay * ($i - 1) + s); 
+	}
+}
+
+@-webkit-keyframes rotateDef {
+	0% { opacity: 0; }
+	2% { opacity: 0; @include translateY(-10px); }
+	5% { opacity: 1; @include translateY(0px); }
+	17% { opacity: 1; @include translateY(0px); }
+	20% { opacity: 0; @include translateY(10px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes rotateDef {
+	0% { opacity: 0; }
+	2% { opacity: 0; @include translateY(-10px); }
+	5% { opacity: 1; @include translateY(0px); }
+	17% { opacity: 1; @include translateY(0px); }
+	20% { opacity: 0; @include translateY(10px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes rotateDef {
+	0% { opacity: 0; }
+	2% { opacity: 0; @include translateY(-10px); }
+	5% { opacity: 1; @include translateY(0px); }
+	17% { opacity: 1; @include translateY(0px); }
+	20% { opacity: 0; @include translateY(10px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes rotateDef {
+	0% { opacity: 0; }
+	2% { opacity: 0; @include translateY(-10px); }
+	5% { opacity: 1; @include translateY(0px); }
+	17% { opacity: 1; @include translateY(0px); }
+	20% { opacity: 0; @include translateY(10px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes rotateDef {
+	0% { opacity: 0; }
+	2% { opacity: 0; @include translateY(-10px); }
+	5% { opacity: 1; @include translateY(0px); }
+	17% { opacity: 1; @include translateY(0px); }
+	20% { opacity: 0; @include translateY(10px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
