@@ -1,818 +1,665 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta property="og:site_name" content="Jahan Cherian>
-		<meta property="og:title" content="About Jahan Cherian">
-		<meta property="og:description" content="Learn more about Jahan Cherian">
-		<meta property="og:image" content="images/logo.png">
-		<meta property="og:url" content="www.jahancherian.com">
-		<meta property="og:type" content="blog">
-		<title> Jahan Cherian's Website </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="images/mini.png" type="image/png"/>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="javascript/main.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="upper-nav">
-				<div class="my-logo">
-					<span class="main-logo">
-						<a href="#about" onclick="goHome(event)">
-							<img src="images/logo.png" >
-						</a>
-					</span>
-				</div>
-				<div class="nav-container">
-					<div class="nav-bar"> 
-						<div class="contains"> 
-							<div onclick="changeContent(event)" class="items"> 
-								<a href="#about" onclick="return false">
-									<img class="off" src="images/about_img_off.png">
-									<img class="on" src="images/about_img.png">
-								</a>
-							</div>
-							<div onclick="changeContent(event)" class="items">
-								<a href="#work" onclick="return false">
-									<img class="off" src="images/work_img_off.png">
-									<img class="on" src="images/work_img.png">
-								</a>
-							</div>
-							<div onclick="changeContent(event)" class="items">
-								<a href="#notes" onclick="return false">
-									<img class="off" src="images/notes_img_off.png">
-									<img class="on" src="images/notes_img.png">
-								</a>
-							</div>
-							<!---<div class="items">
-								<a href="blog/_site/index.html">
-									<img class="off" src="images/blog_off.png">
-									<img class="on" src="images/blog.png">
-								</a>
-							</div>-->
-							<div onclick="changeContent(event)" class="items">
-								<a href="#contact" onclick="return false">
-									<img class="off" src="images/contact_img_off.png">
-									<img class="on" src="images/contact_img.png">
-								</a>
-							</div>
-							<div onclick="changeContent(event)" class="items">
-								<a href="#foryou" onclick="return false">
-									<img class="off" src="images/for_you_off.png">
-									<img class="on" src="images/for_you.png">
-								</a>
-							</div>
-						</div>
-						<div class="work-contains">
-							<div onclick="switchWorkContent(event)" id="code-nav" class="items sub-items">
-								<a href="#code" onclick="return false">
-									<img class="off" src="images/code_img_off.png">
-									<img class="on" src="images/code_img.png">
-								</a>
-							</div>
-							<div onclick="switchWorkContent(event)" id="design-nav" class="items sub-items">
-								<a href="#design" onclick="return false">
-									<img class="off" src="images/design_img_off.png">
-									<img class="on" src="images/design_img.png">
-								</a>
-							</div>
-						</div>	
-							<div class="toggle" onclick="showAll(event)" style="display:none">
-								<img id="nav" src="images/hamburger.png" alt="Hamburger" style="width:20px">
-							</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-content">
-				<div id="about" class="about" >
-					<p> Indian born, Dubai raised, British taught, American schooled… I am a multi-cultured and world travelled <b>computer science major</b> currently in my <b>senior year</b> at <b>UCLA</b>.<br>
-					In my journey through the road of 1’s and 0’s I have found that the true power of a computer scientist lies in the ability to shape reality and transform the future all while sitting behind the screen of a 13-inch computer. 
-					I have learnt that it is not only the movement of one’s fingers across a sleek keyboard, transcribing code like a conductor directs a musical masterpiece, 
-					but also the ability to convey my ideas and share my experiences and learnings that allows me to help shape the lives around me for the better.<br>
-					I am constantly curious about the ever changing world of software engineering, having first found love as an avid <b>iOS developer</b>. After about a year in the space, I decided to switch my specialty to being a <b>Backend Engineer</b> for both web applications and for the lowest levels of <b>infrastructure</b>. My current interests include <b>distributed systems</b> and <b>blockchain technology</b>.
-					I hope to use the various skills and experiences I've picked up over the past couple of years to serve the overall community in a positive way.
-					I love working with companies to elevate their products and ambitions, having worked as a Software Engineering Intern at <a href="http://www.autodesk.com/" target="_blank">Autodesk</a> and <a href="https://www.uber.com/" target="_blank">Uber</a>. I will be pursuing a <b>Full time Software Engineering</b> position at <b>Uber</b> starting <em>Fall 2018</em>.
-					But my passion doesn’t stop at the intricacies of computer science, they continue to flow into the field of art through the form of <b>graphic design and illustration</b>. 
-					Working through <b>Sketch</b> I use my intuition and gut feeling to design the best possible UI/UX that goes into my apps, and follow through by creating 
-					the graphics that truly resonate with who I am. <br>
-					These are my passions, but what are passions if we don’t try and share them with the world… Throughout my schooling journey and beyond, I have always chosen 
-					to <b>teach what I have learnt</b> as best as I could to those willing to learn. As the former <b>tutoring chair</b> for both <b>Tau Beta Pi</b> and 
-					<b>Upsilon Pi Epsilon</b> at UCLA, I helped those struggling in engineering and computer science find the same love and passion as I have for the field.<br>
-					I am taking my teaching ability to new heights by being a <b>Learning Assistant</b> for <b>CS 32</b> this quarter at UCLA.
-					In addition to my teaching endeavours, I love to apply my knowledge into practicalities through various projects and organizations. I am currently growing my leadership and management skills as the <b>President</b> of <a href="http://ucladevx.com/#/" target="_blank">DevX</a>, <b>Co-director</b> of <a href="https://lahacks.com/" target="_blank">LA Hacks</a> and as an ex Product Manager for an iOS project at <a href="http://www.uclacreatives.com" target="_blank">Creative Labs</a>.<br>
-					Last but not least, I hope to carry forth all that I have learnt as both a developer, designer and product manager to eventually drive the entrepreneur within me. As such I am one of the <b>founders</b> and <b>CTO</b> of <a href="http://www.pomily.com/" target="_blank">Pomily</a>, one of the <b>Entrepreneurship Chairs</b> for UPE, leading initiatives such as <a href="http://uclafs.com/#/" target="_blank">Founder's School</a>.<br>
-					If you have reached the end of this brief description of me as a person, then I assume you are interested in working with me or meeting me. If so feel 
-					free to explore <a id="goto" href="#work" onclick="changeContent(event)">my work</a> and <a href="./resume.pdf" target="_blank">resume</a>, 
-					browse my publicly available <a id="goto" href="#notes" onclick="changeContent(event)">notes</a>, and reach out to me through any of my social profiles so that we can do great things together!
-					</p>
-				</div>
-				<div id="work" class="work">
-					<div id="code" class="code">
-						<div class="work-text">
-							<p> The past four years of programming have taken me through a whirlwind of several programming languages, helping me hone my skills as a low-level systems programmer for AutoCAD at <a href="http://www.autodesk.com/" target="_blank">Autodesk</a>, an iOS developer on several side projects, a backend web developer for my <a href="http://www.pomily.com" target="_blank">startup, Pomily</a> and various projects such as <a href="http://grade-portal.herokuapp.com" target="_blank">GradePortal</a>. Taking my passion for working behind the scenes I fell in love with infrastructure as an intern on the Mobile Developer Platform team at <a href="https://www.uber.com/" target="_blank">Uber</a>. I will be joining Uber full time this year, hoping to take my skills to new heights in the field of infrastructure and distributed systems.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karen Li">
+    <meta name="description" content="Third-year Computer Science major at UCLA. Currently seeking a full-time software engineering position for Fall 2019.">
+    <meta name="keywords" content="Karen Li, UCLA, computer science, software, developer, engineer">
+    <meta name="robots" content="index, follow">
 
-							If my work or skillset interest you, feel free to <a href="mailto:jcherian@g.ucla.edu?Subject=Working%20together%20" target="_top">contact me</a>!
-							</p>
-						</div>
-						<div class="projects row">
-							<div class="project-container">
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Uber </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/uber.png" alt="Uber">
-									</div>
-									<p class="description"> Working on Developer Experience for Mobile Engineers</p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Pomily </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/pomily.png" alt="Pomily">
-									</div>
-									<p class="description"> Building the next generation platform for beauty and makeup </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> DevX </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/DevX.png" alt="DevX">
-									</div>
-									<p class="description"> Leading the organization to solve Bruins' frustrations through tech </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Quotebook </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/Quotebook.png" alt="Quotebook">
-									</div>
-									<p class="description"> Remember loved ones like never before </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Bruinscope </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/bruinscope.png" alt="Bruinscope">
-									</div>
-									<p class="description"> Simplifying the interview process at UCLA</p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Autodesk </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/autodesk.png" alt="Autodesk">
-									</div>
-									<p class="description"> Working on enhancing AutoCAD</p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> LA Hacks 2017</h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/lahacks.png" alt="LA Hacks 2017">
-									</div>
-									<p class="description"> Web infrastructure for LA Hacks 2017</p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Creative Labs 2017</h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/creativelabs.png" alt="Creative Labs 2017">
-									</div>
-									<p class="description"> iOS Project Lead for Creative Labs 2017</p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Future Without Borders </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/FWB.png" alt="Future Without Borders">
-									</div>
-									<p class="description"> Helping connect humans for humans </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Lighthouse </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/lighthouse.png" alt="Lighthouse">
-									</div>
-									<p class="description"> Changing safety one click at a time </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Stitch</h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/Stitch.png" alt="Stitch">
-									</div>
-									<p class="description"> Filters on LSD </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> BrainSpace VR</h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/BrainSpace.png" alt="BrainSpace VR">
-									</div>
-									<p class="description"> See and feel the brain like never before </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Doodle Fall </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/Doodle-fall.png" alt="Doodle Fall">
-									</div>
-									<p class="description"> Play. Arcade Style. </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Scavenger </h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/Scavenger.png" alt="Scavenger">
-									</div>
-									<p class="description"> Leave messages on maps for others to find </p>
-								</div>
-								<!-- Change this back to col-xs-12 col-sm-6 col-md-4; when more projects are added -->
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Time Travel Tycoon</h5>
-									<div class="projectContent">
-										<img onclick="showDetail(event)" src="images/time_travel_tycoon.png" alt="Time Travel Tycoon">
-									</div>
-									<p class="description"> Become a billionaire with time</p>
-								</div>
-							</div>
-						</div>
-						<div class="project-info">
-							<div title="Click to go back to projects" class="cancel" onclick="cancel(event)">
-								<img src="images/x.png" alt="Go Back">
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Uber</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/uber-full.jpg" alt="Uber">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> Backend Infrastructure<br>
-									<b>Languages:</b> Golang, Java <br>
-									<b>Creation:</b> Summer 2017 <br>
-									<b>Details:</b><br>
-									Worked on two projects for improving the developer experience for mobile engineers at Uber, while also optimizing existing services. The first project revolved around creating a Go service to provide remote device connection for application testing of the mobile applications. Utilizing third party services to provide remote device connection, the device labs project provides an API and device agnostic wrapper to various functionality with devices including connection and disconnection. It was usable through a friendly commandline interface, with logging and metrics collection. <br> The second project build an event pipeline for differential builds from Phabricator and Jenkins. It provided strong metrics and a notification system capable of failure commenting.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Pomily</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/pomily-full.png" alt="Pomily">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> Backend Web Development<br>
-									<b>Languages:</b> Ruby (Ruby on Rails) <br>
-									<b>Creation:</b> Present <br>
-									<b>Details:</b><br>
-									Co-Founder and CTO of Pomily. 
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>DevX</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/devx-full.png" alt="DevX">
-								</div>
-								<div class="project-details">
-									<p> <b>Position:</b> President<br>
-									<b>Date:</b> Present <br>
-									<b>Details:</b><br>
-									President of DevX at UCLA.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>LA Hacks 2017</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/lahacksfront.png" alt="LAHacks website front">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> Web <br>
-									<b>Languages:</b> Javascript (MKRN) <br>
-									<b>Creation:</b> Present <br>
-									<b>Details:</b><br>
-									I am currently working as an organizer on the development team for LAHacks - the annual 36 hour hackathon at UCLA, working on building the foundations of an entire system infrastructure for the future 
-									of LAHacks. My work primarily focuses on the backend development for the current state of the site, to enable people to create accounts and apply
-									for the hackathon from March 31st to April 2nd of 2017. We focused on using the MKRN (Mongo, Koa, React, Node) stack. My major contribution was on 
-									building the user services, controllers and endpoints focusing on resetting passwords and admin privileges, along with some of the tests. As I continue 
-									to work with the rest of the team, I intend on making huge contributions towards more of the backend along with the future projects and ideas we have
-									for the system.<br>
-									The site and the application can be found on the <a href="http://www.lahacks.com" target="_blank">website</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Creative Labs 2017</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/creativelabsfront.png" alt="Creative Labs at work">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift <br>
-									<b>Creation:</b> Present <br>
-									<b>Details:</b><br>
-									I am currently on the board for Creative Labs as the iOS Project Lead. In summary, Creative Labs serves as the bridge between designers and developers at
-									UCLA to bring the two disciplines together to build amazing quarter long projects, and give anyone and everyone the opportunity to learn the skills to become either a
-									developer or designer through our weekly workshops and speaker series.<br>
-									As the iOS Project Lead, I have worked with leading a beginners iOS workshop in the Fall of 2016, where I helped 7 students understand the fundamentals of
-									Swift and iOS development through a simple Todo application. This Winter, I intend on leading an advanced iOS project by recruiting about developers and 
-									designers to work on a iOS project from the ground up to release on the App Store.<br>
-									More information can be found on our <a href="http://www.uclacreatives.com" target="_blank">website</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Future Without Borders</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/FWB-iphone.png" alt="Future Without Borders Iphone mockup">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift, Objective-C <br>
-									<b>Creation:</b> SD Hacks, October 2015 <br>
-									<b>Awards:</b> Best Use of IBM Bluemix [IBM at SDHacks], Most Entrepreneurially Viable Hack [Perkins Coie at SDHacks], Hack That Best Connects Us [ViaSat at SDHacks],
-									Most Innovative Award [Facebook at ACM Hacker Expo 2015], Individuals Impacted [IBM at Bluemixathon]<br>
-									<b>Details:</b><br>
-									Future without borders was conceived and created around the peak of the <a href="https://www.mercycorps.org/articles/iraq-jordan-lebanon-syria-turkey/quick-facts-what-you-need-know-about-syria-crisis" target="_blank">Syrian Refugee Crisis</a>
-									in order to try and provide help to the fleeing refugees that entered these new countries, hopeful to start a new life.<br>
-									Following a pattern similar to that of AirBnb, we decided to build out an iOS application that would be ideally used by the citizens of the countries accepting refugees at the time, to allow these "hosts"
-									to see any nearby refugee family that might be in need of assistance. The app would allow the host to provide aid to the family selected by picking them up from the nearby locaiton and hosting them for a few days
-									to help them start their new lives.<br>
-									On the refugee side, we assumed the access to a smartphone would be limited, and so we used <a href="https://www.twilio.com/" target="_blank">Twilio</a>'s API to provide a unique number that the refugees could
-									text to register them as requiring assistance. Based on cellular location we would provide said location to the iOS application.<br>
-									This project won three sponsored awards at SD Hacks and continued to win two more awards from IBM and Facebook. Unfortunately, due to several 
-									unfortunate circumstances, the project fell on the back burner and to this day remains a MVP. More information can be found on the project's
-									<a href="http://devpost.com/software/humans-without-borders-y5bsew" target="_blank">Devpost</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Lighthouse</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/lighthouse-iphone.png" alt="Lighthouse">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift, Objective-C <br>
-									<b>Creation:</b> HackSC, November 2015 <br>
-									<b>Awards:</b> Best Mobile Hack<br>
-									<b>Details:</b><br>
-									The weekend of HackSC was also the weekend of the horrible <a href="https://en.wikipedia.org/wiki/November_2015_Paris_attacks" target="_blank">Paris Attacks</a>. Noticing, the
-									lack of an efficient method to warn people, family, friends and law enforcement, we decided to create an easy, single tap solution. From that came Lighthouse, a single
-									tap SOS button located on your home screen. The version built at HackSC used Parse as the backend and was able to notify family members and friends listed in the app of 
-									your danger.<br>
-									After seeing the usefulness of this application, we continued to build it out over a few months, making the application more robust and marketable. We created our backend in Ruby on Rails,
-									hosted on Heroku. The iOS application evolved to have its own networking interface, included requested tracking, pulled daily updated crime events in the area, and acted as a miniature 
-									social media application, aimed at bringing together people for the purpose of safety and crowd-sourced danger reports.<br>
-									After noticing that we couldn't find a decent monetization strategy, the application was abandoned. More information about the application can be found on the 
-									<a href="http://devpost.com/software/lighthouse-9wigoq" target="_blank">Devpost</a> and on the <a href="http://www.lighthouseapp.io/" target="_blank">landing page</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Stitch</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/stitch-iphone.png" alt="Stitch">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift, Objective-C <br>
-									<b>Creation:</b> LA Hacks, April 2016 <br>
-									<b>Awards:</b> Third Place <br>
-									<b>Details:</b><br>
-									After reading a paper on <a href="http://arxiv.org/abs/1508.06576" target="_blank">Convolutional Neural Networks and Art</a> we decided to create a mobile application that would make use of the <a href="https://github.com/jcjohnson/neural-style" target="_blank">torch implementation</a>
-									to allow everyday users to get a feel for the true power of Artificial Intelligence in their hands.<br>
-									After running some tests, we found that on a computer such as a Macbook Pro Retina 13" the image rendering took several minutes to a couple of hours, we decided to move the computation to Amazon EC2 servers with more powerful graphics cards.
-									The iOS application was written to take in two images either through your camera roll or through an image address and would send the images to the server managed by node.js, where a BASH script would take the combined image and send it back to the iOS application which would
-									display the results. The app ran well within 5 minutes per image, and was one of the very first versions of mobile CNN's. It placed third overall at LA Hacks.<br>
-									The application was slated to be worked on during Summer of 2016, to create scheduling mechanisms for server loading, but another app beat us to market. More information about the application can be found 
-									at the <a href="http://devpost.com/software/stitch" target="_blank">Devpost</a>.
-									</p>
-								</div>	
-							</div>
-							<!-- Only release to public once the app is live
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Quotebook</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/quotebook-iphone.png" alt="Quotebook">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift<br>
-									<b>Creation:</b> Personal, August 2016 <br>
-									<b>Details:</b><br>
-									This app was created for ...
-									</p>
-								</div>	
-							</div> -->
-							<div class="project-info-container" style="width:100%">
-								<div class="project-title">
-									<h3>Doodle Fall</h3>
-								</div>
-								<div class="videoWrapper project-media">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/sCSUT1zrvOE" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> Nexsys-3 FPGA Board <br>
-									<b>Languages:</b> Verilog <br>
-									<b>Creation:</b> CSM152A - UCLA, May 2016 <br>
-									<b>Details:</b><br>
-									As the final project and submission to CSM152A, my teammate and I built Doodle Fall. This game is a simple one, where the objective of you, the tiny green doodle,
-									is to stay alive as long as possible, by falling downards along the blocks that appear, avoiding hittint the top and bottom of the screen. The score was determined as a function
-									of time. Similarly, the difficulty of the game was also a function of time, wherein the speed of the falling would increase as you lasted longer in the game. The green blocks were
-									powerups that would slow down the speed of falling.<br>
-									This game was made entirely in Verilog, using an FPGA, Joystick, VGA, Seven Segment LED Display and buttons. The game would store the highest score, and would allow you to reset the game.
-									The joystick allowed you to move horizontally with the speed of movement as a function of the movement of the joystick. The VGA took our code and created a simplistic view on any computer
-									monitor. The video above demonstrates the key features of the game.
-									</p>
-								</div>	
-							</div> 
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Scavenger</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/scavenger-iphone.png" alt="Scavenger">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> iOS <br>
-									<b>Languages:</b> Swift<br>
-									<b>Creation:</b> CSM117 - UCLA, May 2016 <br>
-									<b>Details:</b><br>
-									In order to demostrate our knowledge of networking and real-world application in CSM117, myself and my teammate <a href="http://ckenny9739.bol.ucla.edu" target="_blank">Connor</a>
-									built a small application that leveraged Firebase as our backend.<br>
-									Using Facebook's iOS SDK for login and user authentication and Firebase for data storage and retrieval, we built out an application wherein you, the user can go about
-									your daily life, and if you find anything intersting in the location you're currently at, you can leave either a message about the situation or the place within that location
-									on a global map. Any other user of the app can find that message/photo and view it.<br>
-									The aim of the application was to allow users to share their experiences in a more intimate manner.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>BrainSpace VR</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/brainspace-vr.jpg" alt="BrainSpace VR">
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> Oculus, Myo Armband, Muse Headband <br>
-									<b>Languages:</b> C#, Python<br>
-									<b>Creation:</b> CalHacks 2.0, October 2015 <br>
-									<b>Awards:</b> Top Five at CalHacks 2.0 <br>
-									<b>Details:</b><br>
-									In an attempt to work with hardware, my teammates and I took it upon ourselves to make neurology a more immersive experience. The result was BrainSpace VR,
-									wherein you dawn an Oculus Rift headset to find yourself viewing the 3-D model of a human brain. Equipped with the accompanying Myo Armband, you as the user are
-									able to click on different parts of the brain to learn more about it, and are able to rotate and zoom into the brain to experience it like never before.<br>
-									<a href="http://omarozgur.com" target="_blank">Omar Ozgur</a> was primarily involved with writing some of the C# code to work with the Oculus, while I was involved
-									with using Python and the BeauitfulSoup Library to scrape various webpages to find the different informaiton about the different parts of the brain. Together we worked to
-									additionally include the Muse Headband, to allow simultaneous viewing of your own brain wave pattern. More about the product can be found on our <a href="http://devpost.com/software/brain-space-vr" target="_blank">Devpost</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Time Travel Tycoon</h3>
-								</div>
-								<div class="videoWrapper project-media">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/_V2aTiuYLu4" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div class="project-details">
-									<p> <b>Platform:</b> CryEngine<br>
-									<b>Languages:</b> C++, Lua, Cryengine Flowgraphing<br>
-									<b>Creation:</b> CS188 - UCLA, June 2016 <br>
-									<b>Details:</b><br>
-									Using <a href="https://www.cryengine.com/" target="_blank">CryEngine</a> my teammates and I created an MVP game with Artificial Intelligence mechanisms. The premise of the
-									game was that the player was a man sent back through time to steal the very first iPhone model in order to throw themselves into fame and fortune. The game was built with only a single level to demonstrate its
-									potential. The player is thrown into an environment where they are expected to get through the level either by alerting no guards, or by taking out all the guards in their way to get to the final destination. The score
-									is determined by the speed and efficacy with which the player reached the goal.<br>
-									We programmed the guards to have varying levels of AI using CryEngine's in-built AI mechanisms with slight tweaks of our own, such as giving the guards a proximity sensor based on noise, visibility and distance of the player 
-									to the guard. So the guard would move from standby, to suspicious to alerted mode. The player would be able to hide in a group of employees to detract attention.<br>
-									The game had the ability to be AI controlled based on player performance metrics. Using a weighted function based on the time, targets killed and other factors, we programmed the AI to complete the level achieving the best 
-									score possible. Thus the game would be able to switch from user mode, to AI mode. The video above describes in great detail each of our contributions and the results.
-									A brief report with further links can be found <a href="https://drive.google.com/file/d/0B-13JuAqxdAST2ZqRXlJVUhtTk0/view?usp=sharing" target="_blank">here</a>.
-									</p>
-								</div>	
-							</div>
-							<div class="project-info-container">
-								<div class="project-title">
-									<h3>Autodesk</h3>
-								</div>
-								<div class="project-media">
-									<img src="images/autodesk-intern.jpg" alt="Autodesk">
-								</div>
-								<div class="project-details">
-									<p> <b>Product:</b> AutoCAD<br>
-									<b>Platform:</b> Visual Studio <br>
-									<b>Languages:</b> C++<br>
-									<b>Period:</b> June 2016 - September 2016 <br> 
-									<b>Details:</b><br>
-									Worked to implement an effective and platform independent serialization mechanism, leveraging JSON, to create an Inter Process Communication channel. 
-									This project was built as a workable unit test integrated into AutoCAD with code written to be readily extensible. The serialization involved taking low 
-									level calls and packaging them into a custom built messaging schema. Throughout the internship I gained experience in discussing progress 
-									and workarounds with professional senior software engineers and software architects. I learnt how to navigate a huge code base consisting of million lines of code
-									, while learning the conventions for building industrial strength projects. This greatly improved my ability to modularize and componentize projects.
-									</p>
-								</div>	
-							</div>
-						</div>
-					</div>
-					<div id="design" class="design">
-						<div class="design-text">
-							<p> Using <a href="https://www.sketchapp.com/" target="_blank">Sketch</a> as my weapon of choice, I have worked with designing simple vector illustrations to various interfaces focused on providing the most seamless user experiences. In almost all of my projects I have primarily been a mix of developer and designer. I hope to continuosly expand this skillset and welcome any and all <a href="mailto:jcherian@g.ucla.eduu?Subject=Design" target="_top">feedback</a>. Below are some of my illustrations from two summers ago!
-						</div>
-						<div class="projects row">
-							<div class="project-container">
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Boat in a Bottle </h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img src="images/D_1_Boat.png" alt="Boat in a Bottle">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p>The Boat in the bottle was my very first illustration 
-										and really pushed me into the space of illustration. Unique to my later designs, it focuses
-										more on gradients and less on flat design. I really wanted to encapsulate a new feeling to the
-										idea of designing a boat, wherein the design could remain simple but be unique to just the generic boat in a sea.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Remembering the great</h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_2_Ali.png" alt="Remembering the great">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> Continuing from my design of the boat I felt like the style of using gradients was really working.
-										This inspired me to create a small token of rememberance to a great fighter and a great man in general. <a href="http://muhammadali.com/" target="_blank">Muhammad Ali</a>.
-										This piece really challenged me to using the vector tool more than ever before. The aesthetic is not as pleasing
-										as the other designs, but stands out to me because it was the tipping point for me to focus on simpler designs, rather
-										than approach a complex piece from a simplistic style.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> National Parks</h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_4_National_Park.png" alt="National Parks"> 
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> Wanting to try my newfound skills to more natural landscapes, I went to Google to find the most compelling
-										landscape I could find, and settled on <a href="https://en.wikipedia.org/wiki/Denali_National_Park_and_Preserve" target="_blank">Denali National Park</a> in Alaska.
-										Instead of detailing the landscape, I wanted to try to go for a more simplistic approach, and focused on the beautiful colours of the mountains
-										from all the pictures I could find. As you can see, though there is still a presence of a gradient based design, this piece showcases a focus on
-										a limited colour palette in an attempt to move to a more flat look.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Campfire </h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_5_Camp_Fire.png" alt="Campfire">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> Continuing in my sudden surge of inspiration for nature and its beauty, I decided to undertake creating a campfire. This is
-										my first piece where I truly transition to a flat design, going for simplistic focuses on the fire itself and the background of a large
-										yet beautiful moon. To this date, I continue to believe that this was one of my best pieces as it truly showcases how a simple design
-										can remain beautiful and compelling.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Rocket Science</h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_6_Rocket_Computer.png" alt="Rocket Science">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> Feeling somewhat confident in my newfound skill of illustration, I decided to help a friend of mine out and draw up 
-										a small poster of sorts with this design as its background. Its intent is to attract computer scientists within the Computer Science
-										department at UCLA to try out for the <a href="http://aiaa.seas.ucla.edu/projects.html" target="_blank">UCLA AIAA Rocket Project</a> as it continues to face a lack of strong embedded software engineers. For the curious, the code
-										on the screen does have a sensible translation.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Place of work</h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_7_Desk.png" alt="Place of work">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> While working at Autodesk and staying in Berkeley, CA, I decided to capture my work environment to share with others of interest.
-										As depicted, my table usually remained pretty minimal with the presence of two laptops, two smart watches, my phone, pair of glasses and my 
-										standard headphones. I chose to go with a top down view to make the visual of the technology around me cleaner.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> King of the Game</h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_8_Card.png" alt="King of the Game">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> After a sparse design with the desk, I decided to focus on a smaller object. Playing cards have always been portrayed as having the ability to be aethetically 
-										designed, so I sought out to try and create my own imitation of the King of Spades. The thought pattern for the design of the king's face came from several iterations
-										of a cartoon like portrayal of kings, noticing the hefty beards and majestic crowns. Using this backbone of information, I created the result you see now. This design
-										remains to this date one of my favourite designs due to its simplicity and uniqueness.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> In the Rain </h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/D_9_Rain.png" alt="In the Rain">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> In this design I tried to create a character of sorts. Looking into my own definition of cute characters, I learnt that big eyes and rounded mouths was the way to go. And so 
-										Jeffrey was born. He's by no means a complex design, nor is he necessarily colourful, but to me he captures the essence of innocence and delicacy that comes to my imagination.
-										I found that placing him within a simple thunderstorm environment would be able to express the very emotions described above.</p>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-12 projectCell">
-									<h5 class="projectCell"> Unison </h5>
-									<div class="col-xs-12 col-sm-12 col-md-6 projectContent">
-										<img  src="images/World_unite.png" alt="Unison">
-									</div>
-									<div class="col-xs-12 col-sm-12 col-md-6 description">
-										<p> Watching the news and atrocities of all the countries that had suffered so many casualties over the summer, I decided to show my support by creating a very simple
-										design that tried to emphasis the unity of the world behind these countries, and all other countries that had faced so much terror in the wake of the modern century. To this day,
-										I hope that this design can inspire people to accept one another, and unite against common evil.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="notes" class="notes">
-					<div class="notes-text">
-						<p> The notes below are a collection of my own understandings of the material and snippets from resources provided 
-						to us through the classes offered at UCLA. Feel free to use these notes however you wish to, but remember to always use them as 
-						a <b>secondary source to your own learnings</b> from your respective classes as each professor’s material varies slightly.
-						If you ever feel like you’re struggling in any classes within the STEM field, feel free to <a href="mailto:jcherian@g.ucla.edu?Subject=Tutoring%20help" target="_top"> 
-							contact me</a> as a tutor or visit our <a href="https://upe.seas.ucla.edu/tutoring/" target="_blank">UPE</a> and 
-						<a href="http://www.seasoasa.ucla.edu/need-tutoring/" target="_blank">TBP</a> schedules to come to our free weekly tutoring and review sessions!<br>
-						Should you have any suggestions for my notes, feel free to <a href="mailto:jcherian@g.ucla.edu?Subject=Notes%20Input" target="_top">leave me a message</a>.
-						</p>
-					</div>
-					<div class="projects row">
-						<div class="project-container">
-							<div class="row" style="margin-top: 10px; margin-bottom: 20px;">
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Computer Architecture </h5>
-									<div class="projectContent">
-										<a href="http://goo.gl/A7YkST" target="_blank"><img src="images/cs33.png" alt="Computer Science 33 Notes"></a>
-									</div>
-									<p class="description"> These are some notes from Week 7 onwards for the final of CS 33 </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Software Construction Lab </h5>
-									<div class="projectContent">
-										<a href="http://goo.gl/fxU7P0" target="_blank"><img src="images/cs35L.png" alt="Computer Science 35L Notes"></a>
-									</div>
-									<p class="description"> These are a quarter worth of notes from Lauren Samy's version of CS 35L </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Operating Systems Principles</h5>
-									<div class="projectContent">
-										<a href="http://goo.gl/VQ6ST1" target="_blank"><img src="images/cs111.png" alt="Computer Science 111 Notes"></a>
-									</div>
-									<p class="description"> These are a quarter worth of notes from Professor Mark Kampe's teaching of CS 111 </p>
-								</div>
-							</div>
-							<div class="row" style="margin-top: 10px; margin-bottom: 20px;">
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Network Fundamentals </h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/TBVqnz" target="_blank"><img src="images/cs118.png" alt="Computer Science 118 Notes"></a>
-									</div>
-									<p class="description"> These are a quarter worth of notes from Professor Lixia Zhang's teaching of CS 118 </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Introduction to Algorithms and Complexity</h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/UjYAgY" target="_blank"><img src="images/cs180.png" alt="Computer Science 180 Notes"></a>
-									</div>
-									<p class="description"> These are a quarter worth of notes from Professor Majid Sarrafzadeh's teaching of CS 180 </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Computer Systems Architecture</h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/SS5P27" target="_blank"><img src="images/csm151b.png" alt="Computer Science M151B Notes"></a>
-									</div>
-									<p class="description"> These are my notes from Professor Reinman's teaching of CS M151B  </p>
-								</div>
-							</div>
-							<div class="row" style="margin-top: 10px; margin-bottom: 20px;">
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Fundamentals of Artificial Intelligence</h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/AqEJo1" target="_blank"><img src="images/cs161.png" alt="Computer Science 161 Notes"></a>
-									</div>
-									<p class="description"> These are my notes from Professor van den Broeck's teaching of CS 161  </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> Formal Languages and Automata Theory</h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/7BsmkA" target="_blank"><img src="images/cs181.png" alt="Computer Science 181 Notes"></a>
-									</div>
-									<p class="description"> These are my notes from Professor Sherstov's teaching of CS 181  </p>
-								</div>
-								<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
-									<h5 class="projectCell"> LA: Introduction to Computer Science</h5>
-									<div class="projectContent">
-										<a href="https://goo.gl/vhZxoF" target="_blank"><img src="images/cs32.png" alt="Computer Science 32 Slides"></a>
-									</div>
-									<p class="description"> These are my slides I made as a Learning Assistant for CS 32  </p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="contact" class="col-xs-12 col-sm-12 col-md-12 contact">
-					<div class="col-xs-12 col-sm-12 col-md-6 contact-box">
-						<form id="contact-form" action="https://formspree.io/jcherian@g.ucla.edu" method="POST">
-							<fieldset>
-								<input type="text" name="name" placeholder="Name"/>
-								<input type="text" name="email" placeholder="Email"/>
-								<input type="text" name="_gotcha" style="display: none"/>
-								<textarea name="Message" placeholder="Enter your message here..."></textarea>
-							</fieldset>
-							<fieldset>
-								<input class="btn" type="submit" value="Get in Touch"/>
-							</fieldset>
-						</form>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 contact-info">
-						<p> Feel free to send me a message at if you have any questions about my experience and <a id="goto" href="#work" onclick="changeContent(event)">work</a>,
-						or if you simply need a freelancer specializing in <b>iOS Development</b>, <b>Backend Web Development</b> and/or some <b> design</b>.
-						If you want a more personal connection point, you can always visit any of my social media as listed at 
-						the bottom of this page. I can also be directly reached at jcherian@g.ucla.edu. I look forward to hearing from you! </p>
-					</div>
-				</div>
-				<div id="foryou" class="foryou">
-					<div class="foryou-text">
-						<p> Throughout my life, I find some days to be just difficult, or find myself in situations feeling let down. In those intimate
-						moments, I find it refreshing and reassuring to go through some inspiring videos. I can only hope that the video below can help you,
-						get through any difficulty you are currently facing and enable you to come out stronger from it than you were before. <br>
-						All content shared here is credited to the original content creators and to all the references they used: <a href="http://www.mateuszm.com/" target="_blank">Mateuszm</a> and
-						<a href="http://princeea.com/" target="_blank">Prince Ea</a>, whose videos and messages have helped me get through some hard days.<br>
-						If you enjoyed the video, you can <a id="goto" href="#foryou" onclick="changeContent(event)">refresh</a> to watch some more.
-						</p>
-					</div>
-					<div class="vidWrapper foryou-content">
-						<iframe id="vidFrame" width="560" height="315" src="https://www.youtube.com/embed/sCSUT1zrvOE" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-			<div class="footer-wrapper">
-				<div class="footer">
-					<div class="social-container">
-						<div class="icons">
-							<a href="https://www.facebook.com/jahan.cherian" target="_blank">
-								<img class="social-icons" src="images/fb.png">
-							</a>
-						</div>
-						<div class="icons">
-							<a href="https://www.linkedin.com/in/jahancherian" target="_blank">
-								<img class="social-icons" src="images/linkedin.png">
-							</a>
-						</div>
-						<div class="icons">
-							<a href="https://github.com/jcherianucla" target="_blank">
-								<img class="social-icons" src="images/github.png">
-							</a>
-						</div>
-						<div class="icons">
-							<a href="https://www.instagram.com/jahancherian/" target="_blank">
-								<img class="social-icons" src="images/insta.png">
-							</a>
-						</div>
-						<div class="icons">
-							<a href="mailto:jcherian@g.ucla.edu?Subject=Getting%20in%20touch" target="_top">
-								<img class="social-icons" src="images/mail.png">
-							</a>
-						</div>
-						<div class="icons">
-							<a href="./resume.pdf" target="_blank">
-								<img class="social-icons" src="images/resume.png">
-							</a>
-						</div>
-					</div>
-					<div class="made-with">
-						<p> Made by Jahan Kuruvilla Cherian ©</p>
-					</div>
-				</div>
-			</div>
-			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-			<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <title>Karen Li - Software Developer</title>
 
-ga('create', 'UA-85388320-1', 'auto');
-ga('send', 'pageview');
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Raleway Font -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Social Media Icons Font -->
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <!-- my CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-			</script>
-	</body>
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <!-- typed.js script-->
+     <script src="js/typed.js"></script>
+
+     <!-- smoothscroll.js script -->
+     <script src="js/smoothscroll.js"></script> 
+    
+     <!-- Isotope script -->
+     <script src="js/isotope.min.js" type="text/javascript"></script> 
+     
+     <!-- needed for typed.js and Isotope -->
+     <script src="js/index.js"></script>
+
+     <!-- favicon -->
+     <link rel="shortcut icon" type="image/x-icon" href='img/favicon.ico' />
+  </head>
+  
+  <body>
+      <header id = "top">
+        <h1>Karen Li</h1>
+        <h2> <span class="whoIAm"></span> </h2> 
+      </header>
+
+      <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container" id = "navbar">
+            <div class="navbar-header text-center">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">
+                      <span class = "glyphicon glyphicon-home"></span>
+                    </a></li>
+                    <li><a href="#aboutMe">
+                      <span class ="glyphicon glyphicon-user"></span>
+                    </a></li>
+                    <li><a href="#skills">
+                      <span class ="glyphicon glyphicon-wrench"></span>
+                    </a></li>
+                    <li><a href="#education">
+                      <span class ="glyphicon glyphicon-education"></span>
+                    </a></li>
+                    <li><a href="#experience">
+                      <span class ="glyphicon glyphicon-briefcase"></span>
+                    </a></li>
+                    <li><a href="#projects">
+                      <span class ="glyphicon glyphicon-folder-open"></span>
+                    </a></li>
+                    <li><a href="#contact">
+                      <span class ="glyphicon glyphicon-envelope"></span>
+                    </a></li>
+            </div>
+        </div>
+      </nav>
+
+    <div class = "background-white">
+      <div class = "container" id = "aboutMe">
+        <div class = "row">
+          <div class = "col-md-6">
+            <img src="img/square.jpg" class = "img-responsive img-rounded center-block">
+          </div>
+          <div class = "col-md-5">
+            <h2> About Me </h2>
+            <p> Hello world! My name is Karen Li and I'm a second-year <b>Computer Science</b> student at <b>UCLA</b>, originally from <b>Vancouver, Canada</b>. </p> 
+            <p> For me, <b>coding</b> is not merely the act of writing code to solve problems, but an extremely creative process where the code that I write is a physical manifestation of my <b>self-expression</b>, representing the way I visualize and analyze a problem to find a solution. I'm fascinated by <b>machine learning</b> and <b>back-end development</b>. </p> 
+            <p> You can learn more about me by perusing my resume or by watching a stop motion animation video I made: </p>
+            <div class = "row">
+            <div class = "col-md-5 col-md-offset-1 center-link">
+            <h4> <span class = "glyphicon glyphicon-pencil"></span> 
+            <a href = "docs/karen-li-resume.pdf" target="_blank"> Resume </a> </h4>
+            </div>
+            <div class = "col-md-5 center-link">
+            <h4> <span class = "glyphicon glyphicon-film"></span> 
+            <a href = "https://youtu.be/LQhyq5xl-Oo" target="_blank"> Video </a></h4>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "background-grey">
+      <div class = "container" id = "skills">
+        <h2> Skills </h2> 
+        <h3> Programming Languages </h3>
+        <div class = "row">
+        <div class = "col-md-6">
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title">C++</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title">C</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title">Python</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+            </li>
+          <li>
+            <span class = "skill-title"> Java </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+        <div class = "col-md-6">
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title"> MATLAB </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> JavaScript </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> PHP / Hack </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> SQL </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+        </div>
+        <h3> Software Tools </h3>
+        <div class = "row">
+        <div class = "col-md-6">
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title"> Linux </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Android </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Bash </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> WebGL </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+        <div class = "col-md-6">
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title"> MySQL / PostgreSQL </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Bootstrap </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Node.js </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Arduino </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class = "background-white">
+      <div class = "container" id = "education">
+      <h2>Education</h2>
+        <h3>Schools</h3>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>UCLA</h4>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> Los Angeles, USA</p>
+          <p><span class = "glyphicon glyphicon-time"></span> Sept. 2015 - June 2019</p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Bachelor's Degree in Computer Science</h4>
+          <p> Cumulative GPA: 3.95 (Dean's Honors List)</p>
+          <p> I am a member of the Upsilon Pi Epsilon and Tau Beta Pi honor societies. I won the Terence Lim Engineering Undergraduate Endowed Scholarship in February 2017.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>Handsworth Secondary</h4>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> North Vancouver</p>
+          <p><span class = "glyphicon glyphicon-time"></span> Sept. 2010 - June 2015</p>
+          </div>
+          <div class = "col-md-8">
+          <h4>High School</h4>
+          <p>I won the "Top Scholar Award" and "Governor General of Canada Academic Medal" in senior year for having the highest unweighted average (98%) out of a graduating class of more than 300 students.</p>
+          </div>
+        </div>
+        <h3>College Coursework</h3>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>CS 111</h4>
+          <p> <span class = "glyphicon glyphicon-floppy-disk"> </span> C, Python </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Operating Systems</h4>
+          <p>Computer software systems, kernel structure, bootstrapping, input/output (I/O) devices, interrupts, processes and threads, memory management, virtual memory, scheduling, synchronization, file systems, distributed systems, protection and security.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>CS 131</h4>
+          <p> <span class = "glyphicon glyphicon-floppy-disk"> </span> TBD </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Programming Languages</h4>
+          <p>Design and use of programming languages: abstraction, modularity, control mechanisms, types, declarations, syntax, and semantics. Functional, object-oriented, and logic programming language paradigms.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>CS M146</h4>
+          <p> <span class = "glyphicon glyphicon-floppy-disk"> </span> Python </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Introduction to Machine Learning</h4>
+          <p> Foundations for modeling data sources, principles of operation of common tools for data analysis, and application of tools and models to data gathering and analysis. Statistical foundations, regression, classification, kernel methods, clustering, expectation maximization, principal component analysis, decision theory, reinforcement learning and deep learning.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>CS M151B</h4>
+          <p> <span class = "glyphicon glyphicon-floppy-disk"> </span> TBD </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Computer Systems Architecture</h4>
+          <p>Computer system organization and design, implementation of CPU datapath and control, instruction set design, memory hierarchy (caches, main memory, virtual memory) organization and management, input/output subsystems (bus structures, interrupts, DMA), performance evaluation, pipelined processors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "background-grey">
+      <div class = "container" id = "experience">
+      <h2>Experience</h2>
+        <h3>Career</h3>
+          <div class = "row">
+            <div class = "col-md-4">
+            <h4>Internship</h4>
+            <p> <span class = "glyphicon glyphicon-briefcase"> </span> Facebook, Inc. </p>
+            <p> <span class = "glyphicon glyphicon-map-marker"> </span> Menlo Park, USA </p>
+            <p><span class = "glyphicon glyphicon-time"></span> June 2017 - Sept. 2017</p>
+            </div>
+            <div class = "col-md-8">
+            <h4>Software Engineer Intern for Facebook</h4>
+            <p> Built all infrastructure for comment ranking personalization from ground up: feature engineering, machine learning model execution, and user-personalized ranking of comments. Extracted features from comments and users to use as input for ML models, both in real-time and using data pipelines for aggregate features. Combined user engagement prediction scores generated from ML models for each comment into personalization scores used for ranking comments. Ran ranking experiments in production and then analyzed resulting metrics.
+            </p>
+            </div>
+          </div>
+         <div class = "row">
+          <div class = "col-md-4">
+          <h4>Internship</h4>
+          <p> <span class = "glyphicon glyphicon-briefcase"> </span> Fortinet Inc.</p>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> Vancouver, Canada</p>
+          <p><span class = "glyphicon glyphicon-time"></span> June 2016 - Sept. 2016</p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Jr. Web Developer for Fortinet </h4>
+          <p> Created a new archive for Fortinet’s bug reporting database to optimize time required to view entries by splitting data between two servers. Wrote scripts to correctly insert and remove data between relational databases with tables of +4 million entries (currently used in production). Utilized bug database APIs to implement a new website for Fortinet developers to view the archived entries.
+          </p>
+          </div>
+        </div>
+        <h3>Research</h3>
+         <div class = "row" id = "research">
+          <div class = "col-md-4">
+          <h4>Neurovascular Imaging Research Core</h4>
+          <p> <span class = "glyphicon glyphicon-user"> </span> Dr. Fabien Scalzo </p>
+          <p> <span class = "glyphicon glyphicon-education"> </span> UCLA </p>
+          <p><span class = "glyphicon glyphicon-time"></span> Jan. 2017 - present </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Undergraduate Researcher</h4>
+          <p> Develop an original RL system, in the context of time-series forecasting, to learn an optimal interaction/trading strategy to maximize the reward of the simulated RL agent. Through experiments, the Bitcoin time-series is used retrospectively to evaluate the effectiveness of the learned policies. The project is being implemented using Python, the Maja Machine Learning Framework, and scikit-learn.
+          </p>
+          </div>
+        </div>
+        <h3>Leadership</h3>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>Upsilon Pi Epsilon</h4>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> Los Angeles, USA</p>
+          <p><span class = "glyphicon glyphicon-time"></span> May 2017 - present </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Entrepreneurship Chair for Upsilon Pi Epsilon, California Beta Chapter</h4>
+          <p> Organize and obtain sponsorship for events such as StartupFair.LA (emailed over 150+ companies and raised over $2500 in sponsorship funds last year). Create events to promote entrepreneurship culture and allow students to network with start ups and tech companies. </p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>UCLA Engineering</h4>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> Los Angeles, USA</p>
+          <p><span class = "glyphicon glyphicon-time"></span> May 2016 - present </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Engineering Ambassador for UCLA Engineering School</h4>
+          <p> Serve as the face of the UCLA Henry Samueli School of Engineering and Applied Science. Give personal tours of the UCLA Engineering School and research labs to at least three groups every week. Volunteer at events such as Engineering Welcome Day, which hosts over 700 new students every year.</p>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h4>UCLA MentorSEAS</h4>
+          <p> <span class = "glyphicon glyphicon-map-marker"> </span> Los Angeles, USA</p>
+          <p><span class = "glyphicon glyphicon-time"></span> Sept. 2016 - present </p>
+          </div>
+          <div class = "col-md-8">
+          <h4>Mentor for MentorSEAS</h4>
+          <p> Act as a mentor to a small group of first-year students in computer science by sharing personal experiences and lessons learned so they can make the most out of their time at UCLA and receive advice and support when needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "background-white">
+      <div class = "container" id = "projects">
+      <h2>Projects</h2>
+      <div class = "row">
+      <div class= "col-md-12 isotopeFilters">
+        <p> <b> Reset to Default: </b>
+        <a href="#" data-filter="*">Show All Projects</a> 
+        <p> <b> Filter by Language: </b>  
+        <a href="#" data-filter=".cpp">C++</a>  ||
+        <a href="#" data-filter=".c">C</a>  ||   
+        <a href="#" data-filter=".python">Python</a>  ||
+        <a href="#" data-filter=".java">Java</a>  ||
+        <a href="#" data-filter=".javascript">JavaScript</a>
+        </p>
+        <p> <b> Filter by Topic: </b>
+        <a href="#" data-filter=".webdev">Web</a> ||
+        <a href="#" data-filter=".mobile">Mobile</a> ||
+        <a href="#" data-filter=".ml">Machine Learning</a>  ||
+        <a href="#" data-filter=".games">Games</a> || 
+        <a href="#" data-filter=".hardware">Hardware-Integrated</a>
+        </p>
+      </div>
+      </div>
+        <div class = "row isotopeContainer">
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector javascript webdev">
+            <figure class = "caption">
+              <img src = "img/loop.png" class = "img-responsive img-rounded center-block caption__media" alt = "Loop textbook trading app">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Loop</h4>
+                <p> A textbook trading application that uses graph theory algorithms to find trade loops between users. Implemented live search, user authentication, and back-end APIs to interact with database. Created home page and pop-up to allow user to add and edit a new trade relation.</p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                JavaScript, Web</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "http://www.loop-trading.com/" target = "_blank">Loop</a> </h4>
+          </div>  
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector javascript webdev games">
+            <figure class = "caption">
+              <img src = "img/rainbowRunner.png" class = "img-responsive img-rounded center-block caption__media" alt = "Rainbow Runner video game screen in Mario mode">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Rainbow Runner</h4>
+                <p> A vertically scrolling game where the player must dodge cubes while navigating through a Rainbow Road or Super Mario themed world. All computer graphics and game logic written completely from scratch, using JavaScript and WebGL. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                JavaScript, Web, Games</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://ucla-wi17-cs174a.github.io/project-group05/" target = "_blank"> Rainbow Runner </a> </h4>
+          </div>  
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector java mobile">
+            <figure class = "caption">
+              <img src = "img/dineSum.png" class = "img-responsive img-rounded center-block caption__media" alt = "Screenshot of nearby request feed">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>DineSum</h4>
+                <p> An Android application that uses crowdsourcing to make the pre-dining experience less stressful. Users can make requests for informal "reservations" at restaurants that don't take real reservations and other users can fulfill those requests in return for a small monetary payment. </p>
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                Java, Mobile</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/DineSum" target = "_blank"> DineSum </a> </h4>
+          </div> 
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector c">
+            <figure class = "caption">
+              <img src = "img/shell.png" class = "img-responsive img-rounded center-block caption__media" alt = "Terminal shell icon">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Simpleton Shell</h4>
+                <p> A simple, stripped down shell that takes in as command line arguments which files to access, which pipes to create, and which subcommands to invoke. Child processes are spawned to run the subcommands and their exit statuses reported. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                C</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/CS-111/tree/master/Lab%201/Lab%201C" target = "_blank">Simpleton Shell</a> </h4>
+          </div>  
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector python ml">
+            <figure class = "caption">
+              <img src = "img/brains.png" class = "img-responsive img-rounded center-block caption__media" alt = "MRI scans of brains">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Brain Hemorrhage Prediction</h4>
+                <p> Multiple machine learning models running different classification algorithms to predict whether a patient would have future hemorrhagic transformations, based on their initial MRI scan images. Implemented using both Tensorflow and scikit-learn.</p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                Python, ML</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/TrinaKat/BrainHemorrhage" target = "_blank"> Brain Hemorrhage Prediction </a> </h4>
+          </div>
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector python ml">
+            <figure class = "caption">
+              <img src = "img/RLtrading.jpg" class = "img-responsive img-rounded center-block caption__media" alt = "Graph of Bitcoin prices over time">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>RL Trading</h4>
+                <p> A reinforcement learning (RL) agent that uses the Bitcoin price time series to learn the optimal policy for trading. Research project supervised by Dr. Fabien Scalzo at UCLA and implemented in Python on top of the Maja Machine Learning Framework and scikit-learn. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                Python, ML</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "#research" target = "_blank"> RL Trading</a> </h4>
+          </div> 
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector cpp">
+            <figure class = "caption">
+              <img src = "img/CyberSpider.png" class = "img-responsive img-rounded center-block caption__media" alt = "Cyber Spider program">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Cyber Spider</h4>
+                <p> An attack detection system that searches for relationships between known malicious entities and other entities to discover as-yet unknown malicious entities. I created a disk-based hashtable class for quick data storage and access. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                C++</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/CyberSpider" target = "_blank">Cyber Spider</a> </h4>
+          </div>  
+           <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector cpp games">
+            <figure class = "caption">
+              <img src = "img/Frackman.png" class = "img-responsive img-rounded center-block caption__media" alt = "Frackman video game">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Frackman</h4>
+                <p> A 2D arcade-style game where the player, Frackman, tries to find all of the oil barrels on each level, while bribing the angry protestors who are following him with gold nuggets or shooting them with water squirts. This was my first intensive CS project.</p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                C++, Games</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/FrackMan" target = "_blank">Frackman</a> </h4>
+          </div> 
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector hardware">
+            <figure class = "caption">
+              <img src = "img/opsPCB.png" class = "img-responsive img-rounded center-block caption__media" alt = "Autonomous line-sensing car with Arduino">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Autonomous Line-Sensing Car</h4>
+                <p> An autonomous line-sensing car prototyped on a breadboard that uses IR LED distance sensors and PID control implemented using Arduino to follow a line/track. This was my team capstone project for the IEEE: Open Project Space program.</p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                Hardware</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/tanya-al/OPS_Capstone" target = "_blank">Autonomous Line-Sensing Car </a></h4>
+          </div>        
+      </div>
+    </div>     
+
+    <div class = "background-img">
+      <div class = "container" id = "contact">
+      <h2>Contact Me</h2>
+      <div class = "row">
+        <div class = "col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "mailto:karen.li@ucla.edu">
+              <span class = "glyphicon glyphicon-envelope"></span>
+              karen.li@ucla.edu </a>
+            </h3>
+        </div>
+        <div class = "col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "https://www.facebook.com/karenli614" target = "_blank">
+              <span class="socicon-facebook"></span>
+              Facebook </a>
+            </h3>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "https://www.github.com/codeKaren" target = "_blank">
+              <span class = "socicon-github"></span>
+              Github </a>
+            </h3>
+        </div>
+        <div class = "col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "https://www.linkedin.com/in/karen-li-729830122" target = "_blank">
+              <span class="socicon-linkedin"></span>
+              LinkedIn </a>
+            </h3>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "https://twitter.com/realKarenLi" target = "_blank">
+              <span class = "socicon-twitter"></span>
+              Twitter </a>
+            </h3>
+        </div>
+        <div class = "col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <h3> 
+              <a href = "https://www.yelp.com/user_details?userid=BOtUON3A76EC4hJSdxud0g" target = "_blank">
+              <span class="socicon-yelp"></span>
+              Yelp </a>
+            </h3>
+        </div>
+      </div>
+      </div>
+    </div>
+
+</body>
 </html>
